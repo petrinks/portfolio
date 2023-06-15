@@ -37,6 +37,9 @@ function App() {
             <p><a href="#">Habilidades</a></p>
             <p><a href="#">Contato</a></p>
           </div>
+          <div className="navbar-retratil">
+            oi  
+          </div>
         </header>
           <div className="me">
             <div className="me-img"><img src="./public/profile-pic.png" alt="" /></div>
