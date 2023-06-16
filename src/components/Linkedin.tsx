@@ -6,6 +6,7 @@ function Linkedin() {
     return(
         <>
             <AiOutlineLinkedin className="icon linkedin" />
+            
         </>
     )
 }

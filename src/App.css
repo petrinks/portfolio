@@ -13,6 +13,12 @@ body{
 	overflow: hidden;
 }
 
+.body-div{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
 
 /* LASER TAG */
 
@@ -266,8 +272,6 @@ body{
 
 
 
-
-
 /* HEADER AND MAIN "CONFIG" */
 
 
@@ -296,11 +300,6 @@ header div h1{
     gap: 40px;
 }
 
-.navbar-retratil{
-	width: 40px;
-	height: 40px;
-	display: none;
-}
 
 .navbar p{
     font-size: 18px;
@@ -324,31 +323,120 @@ header div h1{
 
 .navbar a:hover::before,
 .navbar a:focus:before{
-    visibility: visible;
+	visibility: visible;
     transform: scaleX(1);
   
 }
 
 .navbar p a{
-    text-decoration: none;
+	text-decoration: none;
     color: white;
+}
+
+.navbar-retratil{
+	width: 40px;
+	height: 40px;
+	display: none;
+}
+
+.mobile-menu{
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: #262626eb;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	transition: all 2s linear;
+	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.mobile-menu p a{
+	display: none;
+	text-decoration: none;
+    color: white;
+}
+
+.mobile-menu-navbar{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.mobile-menu-navbar p{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.header-mobile-menu{
+	width: 90%;
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+}
+
+.header-mobile-menu svg{
+	color: #BFBFBF;
+	width: 40px;
+	height: 40px;
 }
 
 
 @media (max-width: 1240px) {
+	main{
+		width: 90%;
+		left: 5%;
+	}
 	.navbar{
 		display: none;
 	}
-	.navbar-retratill{
+	.navbar-retratil{
 		display: block;
-		background-color: aqua;
+		z-index: 2;
+	}
+	.mobile-menu{
+		display: flex;
+		justify-content: end;
+	}
+	.mobile-menu p a{
+		display: block;
 	}
 }
+
+@keyframes slide-in-bottom {
+	0% {
+	  transform: translateY(1000px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes flip-horizontal-bottom {
+	0% {
+	  transform: rotateX(0);
+	}
+	100% {
+	  transform: rotateX(-180deg);
+	}
+  }
+
+  
 
 /* DIV 1 (ME-DEV-SOCIAL) */
 
 .me{
-    margin-top: 100px;
+	margin-top: 100px;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -386,4 +474,8 @@ header div h1{
     justify-content: center;
     align-items: center;
     gap: 10px;    
+}
+
+@media (max-width: 1240px) {
+
 }

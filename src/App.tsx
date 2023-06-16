@@ -3,10 +3,44 @@ import Github from "./components/Github";
 import Instagram from "./components/Instagram";
 import WhatsApp from "./components/WhatsApp"
 import Linkedin from "./components/Linkedin";
+import { IoIosMenu } from "react-icons/io";
+import { TfiClose } from "react-icons/tfi";
+import { useState } from "react";
 
 function App() {
+  const [menuAtivo,setMenuAtivo] = useState(true)
+  const [iconAtivo,setIconAtivo] = useState(false)
+
+  function trocarIconAtivo() {
+    console.log("teste")
+  }
+
+  function trocarMenuAtivo() {
+    setMenuAtivo(!menuAtivo)
+    setIconAtivo(!iconAtivo)
+  }
+
+  
   return (
-    <>
+    <div className='body-div'>
+      
+     {menuAtivo ? (
+            null
+          ) : (
+            <>
+            <div className="mobile-menu">
+              <div className="header-mobile-menu">
+                  <TfiClose className="menu-mobile-icon" onClick={trocarMenuAtivo}/>
+                </div>
+                <div className="mobile-menu-navbar">
+                  <p><a href="#">Sobre mim</a></p>
+                  <p><a href="#">Projetos</a></p>
+                  <p><a href="#">Habilidades</a></p>
+                  <p><a href="#">Contato</a></p>
+                </div>
+              </div>
+            </>
+            )}
     <div className="animation-container">
 	<div className="lightning-container">
 		<div className="lightning white"></div>
@@ -37,9 +71,11 @@ function App() {
             <p><a href="#">Habilidades</a></p>
             <p><a href="#">Contato</a></p>
           </div>
-          <div className="navbar-retratil">
-            oi  
-          </div>
+          {/* MENU RETRATIL */}
+          {iconAtivo ? (null) : ( 
+          <div className="navbar-retratil" >
+            <IoIosMenu className="icon" onClick={trocarMenuAtivo} />
+          </div>)}       
         </header>
           <div className="me">
             <div className="me-img"><img src="./public/profile-pic.png" alt="" /></div>
@@ -54,7 +90,7 @@ function App() {
             </div>
           </div>
        </main>
-      </>
+      </div>
   )
 }
 
