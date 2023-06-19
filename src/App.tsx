@@ -3,6 +3,7 @@ import Github from "./components/Github";
 import Instagram from "./components/Instagram";
 import WhatsApp from "./components/WhatsApp"
 import Linkedin from "./components/Linkedin";
+import profilePhoto from "./assets/profile-pic.png";
 import { IoIosMenu } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
 import { IoLogoJavascript } from "react-icons/io";
@@ -18,9 +19,6 @@ function App() {
   const [menuAtivo,setMenuAtivo] = useState(true)
   const [iconAtivo,setIconAtivo] = useState(false)
 
-  // function trocarIconAtivo() {
-  //   console.log("teste")
-  // }
 
   function trocarMenuAtivo() {
     setMenuAtivo(!menuAtivo)
@@ -85,7 +83,7 @@ function App() {
             </div>)}       
           </header>
           <div className="me">
-            <div className="me-img"><img src="./public/profile-pic.png" alt="" /></div>
+            <div className="me-img"><img src={profilePhoto} alt="" /></div>
             <div className="me-dev-social">
               <h1>Desenvolvedor Front End | 18y</h1>
               <div className="me-social">
