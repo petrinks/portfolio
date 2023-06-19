@@ -18,9 +18,9 @@ function App() {
   const [menuAtivo,setMenuAtivo] = useState(true)
   const [iconAtivo,setIconAtivo] = useState(false)
 
-  function trocarIconAtivo() {
-    console.log("teste")
-  }
+  // function trocarIconAtivo() {
+  //   console.log("teste")
+  // }
 
   function trocarMenuAtivo() {
     setMenuAtivo(!menuAtivo)
