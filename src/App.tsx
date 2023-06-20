@@ -147,6 +147,25 @@ function App() {
                 </div>
               </section>
             </div>
+            <div className="container-projetos">
+              <h1>Projetos</h1>
+              <div className="grid-projeto">
+                <div className="grid-projeto-esquerda">
+                  <h1>Projeto 1</h1>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in c1.10.32.</p>
+                    <p>Repositorio do Projeto</p>
+                    <div className="container-tecnologias">
+                      <AiFillHtml5 />
+                      <FaCss3Alt />
+                      <FaReact />
+                      <SiSass />
+                    </div>
+                </div>
+                <div className="grid-projeto-direita">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
         </main>
   </div>
   )

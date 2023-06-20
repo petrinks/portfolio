@@ -482,7 +482,13 @@ header div h1{
 }
 
 @media (max-width: 1240px) {
-
+	.me{
+		flex-direction: column;
+		margin-top: 60px;
+	}
+	.me-img{
+		margin-bottom: 40px;
+	}
 }
 
 /* SKILLS  */
@@ -501,6 +507,13 @@ header div h1{
 	color: #9D9D9D;
 }
 
+@media (max-width: 1240px) {
+	.skills-container svg{
+		width: 55px;
+		height: 55px;
+	}
+}
+
 /* SOBRE MIM E LINHA DO TEMPO*/
 
 .container-sobremim-tempo{
@@ -515,8 +528,7 @@ header div h1{
 
 .container-sobremim{
 	width: 50%;
-	min-height: 65%;
-	max-height: 95%;
+	min-height: 90%;
 	background-color: #3B3C41;
 	border-radius: 10px;
 	padding: 35px;
@@ -542,11 +554,8 @@ header div h1{
 	align-items: end;
 }
 
-
-
-
 .container-linha-tempo{
-	width: 10%;
+	width: 19%;
 	height: 95%;
 	border-left: solid 3px #D96941;
 }
@@ -568,8 +577,6 @@ header div h1{
 	border-radius: 10px;
 	border: solid #D96941 2px;
 }
-
-
 
 .container-acontecimento-tempo{
 	width: 100%;
@@ -602,4 +609,42 @@ header div h1{
 
 .senac h1, .alura h1, .puc h1{
 	margin-bottom: 5px;
+}
+
+/* PROJETOS */
+
+.container-projetos{
+	width: 100%;
+	height: 100%;
+	background-color: #3B3C41;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 105px;
+	padding: 55px 70px 0 70px;
+}
+
+.grid-projeto{
+	width: 1000px;
+	min-height: 500px;
+	max-width: 900px;
+	background-color: aqua;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 70px;
+}
+
+.grid-projeto-esquerda{
+	width: 50%;
+	height: 100%;
+	background-color: #9D9D9D;
+
+}
+
+.grid-projeto-direita{
+	width: 50%;
+	height: 100%;
+	background-color: green;
 }
