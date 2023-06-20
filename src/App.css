@@ -271,6 +271,11 @@ body{
 }
 
 
+@media (max-width: 1440px) {
+	.animation-container{
+		display: none;
+	}
+}
 
 /* HEADER AND MAIN "CONFIG" */
 
@@ -494,4 +499,107 @@ header div h1{
 	width: 75px;
 	height: 75px;
 	color: #9D9D9D;
+}
+
+/* SOBRE MIM E LINHA DO TEMPO*/
+
+.container-sobremim-tempo{
+	width: 100%;
+	height: 900px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-top: 100px;
+	gap: 130px;
+}
+
+.container-sobremim{
+	width: 50%;
+	min-height: 65%;
+	max-height: 95%;
+	background-color: #3B3C41;
+	border-radius: 10px;
+	padding: 35px;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.container-sobremim h1{
+	font-size: 40px;
+}
+
+.container-sobremim p{
+	font-weight: 300;
+	font-size: 19px;
+}
+
+.container-tempo{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: end;
+}
+
+
+
+
+.container-linha-tempo{
+	width: 10%;
+	height: 95%;
+	border-left: solid 3px #D96941;
+}
+
+.grid-linha{
+	width: 100%;
+	min-height:16.25%;
+	max-height: 23.75%;
+	border-top: solid 3px #D96941;
+}
+
+.circle-tempo{
+	width: 10px;
+	height: 10px;
+	background-color: #262626;
+	position: relative;
+	bottom: 6px;
+	right: 6px;
+	border-radius: 10px;
+	border: solid #D96941 2px;
+}
+
+
+
+.container-acontecimento-tempo{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+}
+
+.grid-acontecimento{
+	width: 100%;
+	height: 100px;
+	background-color: #3B3C41;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 15px;
+}
+
+.grid-acontecimento p{
+	font-weight: 300;
+}
+
+.grid-acontecimento h1{
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.senac h1, .alura h1, .puc h1{
+	margin-bottom: 5px;
 }
