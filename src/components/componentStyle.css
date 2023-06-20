@@ -59,4 +59,12 @@
     .instagram{
         color: #fc1cd7;
     }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .github{
+        width: 30px;
+        height: 30px;
+    }
 }
