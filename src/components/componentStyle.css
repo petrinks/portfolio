@@ -68,3 +68,24 @@
         height: 30px;
     }
 }
+
+.button-style{
+
+}
+
+.ler-mais-oculto{
+    /* display: none; */
+}
+
+@media (max-width: 1240px) {
+    .ler-mais-ativo {
+        width: 100%;
+        padding: 5px;
+        background-color: transparent;
+        border: solid #D96941 3px;
+        border-radius: 10px;
+        color: #F2F2F2;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}

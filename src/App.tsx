@@ -4,6 +4,7 @@ import Instagram from "./components/Instagram";
 import WhatsApp from "./components/WhatsApp"
 import Linkedin from "./components/Linkedin";
 import profilePhoto from "./assets/profile-pic.png";
+import Button from "./components/button";
 import { IoIosMenu } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
 import { IoLogoJavascript } from "react-icons/io";
@@ -107,6 +108,7 @@ function App() {
               <section className='container-sobremim'>
                 <h1>Sobre mim</h1>
                 <p>Sou um desenvolvedor front-end apaixonado pela arte de criar interfaces digitais cativantes e funcionais. Com minhas habilidades técnicas refinadas e meu olho aguçado para o design, me destaco ao transformar conceitos em experiências interativas e intuitivas.</p>
+                <Button />
                 <p>Além da minha paixão pela programação, valorizo um estilo de vida saudável e ativo. A academia é uma parte essencial da minha rotina diária, pois sei que cuidar do meu corpo é fundamental para manter a mente afiada. O exercício físico não apenas fortalece meus músculos, mas também nutre meu cérebro com endorfinas e energia positiva, o que, por sua vez, impulsiona minha criatividade e foco no trabalho.</p>
                 <p>Minha dedicação em me manter em forma reflete-se na minha abordagem disciplinada e perseverante para solucionar desafios de programação. Assim como em meus treinos, supero obstáculos, busco constantemente aprender e me aprimorar, mantendo-me atualizado sobre as últimas tendências e tecnologias do mundo front-end.</p>
                 <p>No geral, sou um desenvolvedor front-end apaixonado e dedicado, cuja busca pela excelência técnica e bem-estar pessoal se entrelaçam, resultando em um profissional talentoso e equilibrado.</p>
@@ -128,7 +130,7 @@ function App() {
                 </div>
                 <div className="container-acontecimento-tempo">
                   <div className="grid-acontecimento">
-                    <h1>Ainda existe muito a ser codificado :)</h1>
+                    <h1>Ainda existe muito a ser codificado</h1>
                   </div>
                   <div className="grid-acontecimento puc">
                     <h1>Graduação em Ciências da computação</h1>
@@ -147,13 +149,16 @@ function App() {
                 </div>
               </section>
             </div>
+
             {/* <div className="container-projetos">
               <h1>Projetos</h1>
               <div className="grid-projeto">
                 <div className="grid-projeto-esquerda">
                   <h1>Projeto 1</h1>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in c1.10.32.</p>
-                    <p>Repositorio do Projeto</p>
+                    <div className="box-p">
+                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in c1.10.32.</p>
+                    </div>
+                    <p><a href="">Repositório do Projeto</a></p>
                     <div className="container-tecnologias">
                       <AiFillHtml5 />
                       <FaCss3Alt />
@@ -166,6 +171,7 @@ function App() {
                 </div>
               </div>
             </div> */}
+
         </main>
   </div>
   )
