@@ -546,14 +546,17 @@ header div h1{
 
 .container-sobremim{
 	width: 50%;
-	min-height: 90%;
+	min-height: 60%;
+	max-height: 90%;
 	background-color: #3B3C41;
 	border-radius: 10px;
 	padding: 35px;
-	gap: 20px;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	text-align: justify;	
+	position: relative;
+	gap: 20px	;
 }
 
 .container-sobremim h1{
@@ -563,10 +566,6 @@ header div h1{
 .container-sobremim p{
 	font-weight: 300;
 	font-size: 19px;
-}
-
-.ler-mais-oculto{
-	display: none;
 }
 
 .container-tempo{
@@ -633,6 +632,21 @@ header div h1{
 	margin-bottom: 5px;
 }
 
+.ler-mais-ativo:hover {
+    background-color: #D96941;
+	transition: 0.5s ease-in-out;
+}
+  
+.ler-mais-oculto{
+	display: none;
+	width: 90%;
+}
+
+.content-p-sobremim{
+	height: 900px;
+	overflow: hidden;
+}
+
 @media (max-width: 1240px) { 
 	.container-sobremim-tempo{
 		width: 100%;
@@ -642,11 +656,55 @@ header div h1{
 	}
 	.container-sobremim{
 		width: 90%;
-		min-height: 44%;
-		overflow: hidden;
+		min-height: 50%;
+		position: relative;
 	}
-	.ler-mais-ativo{
+	.ler-mais-ativo {
 		display: block;
+        padding: 5px;
+		width: 95%;
+        background-color: #3B3C41;
+        border: solid #D96941 3px;
+        border-radius: 10px;
+        color: #F2F2F2;
+        font-size: 17px;
+        font-weight: 300;
+        position: relative;
+        bottom: 8px;
+		z-index: 10;
+    }
+	.container-sobremim::before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 150px;
+		border-radius: 100px;
+		background: linear-gradient(transparent 30%, #3B3C41 65%);
+	}
+}
+
+@media (max-width: 1499px) {
+	.ler-mais-ativo {
+		display: block;
+        padding: 5px;
+        background-color: #3B3C41;
+        border: solid #D96941 3px;
+        border-radius: 10px;
+        color: #F2F2F2;
+        font-size: 17px;
+        font-weight: 300;
+        position: absolute;
+        bottom: 8px;
+	}
+	.container-sobremim::before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 150px;
+		border-radius: 100px;
+		background: linear-gradient(transparent 30%, #3B3C41 65%);
 	}
 }
 
