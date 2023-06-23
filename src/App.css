@@ -556,7 +556,7 @@ header div h1{
 	align-items: center;
 	text-align: justify;	
 	position: relative;
-	gap: 20px	;
+	gap: 20px;
 }
 
 .container-sobremim h1{
@@ -647,6 +647,15 @@ header div h1{
 	overflow: hidden;
 }
 
+.container-sobremim-oculto{
+	height: 100%;
+}
+
+.content-p-sobremim-oculto{
+	overflow: visible;
+	height: 100%;
+}
+
 @media (max-width: 1240px) { 
 	.container-sobremim-tempo{
 		width: 100%;
@@ -681,6 +690,10 @@ header div h1{
 		height: 150px;
 		border-radius: 100px;
 		background: linear-gradient(transparent 30%, #3B3C41 65%);
+	}
+	.container-sobremim-oculto{
+		overflow: visible;
+		height: 100%;
 	}
 }
 
