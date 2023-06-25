@@ -106,6 +106,11 @@ function App() {
               <SiSass />
               <CgFigma />
             </div>
+            
+            {/* <section className={lerAtivo ? 'container' : 'container-2'}>
+              <h1>Oi</h1>
+            </section>  */}
+
             <div className="container-sobremim-tempo">
                 {lerAtivo ? (
                   <section className='container-sobremim'>
@@ -118,10 +123,10 @@ function App() {
                     </div>
                   <button 
                   onClick={lerMais}
-                  className='ler-mais-ativo ler-mais-oculto'>Ler mais</button>
+                  className='ler-mais-ativo ler-mais-inativo'>Ler mais</button>
                  </section>
                 ) : (
-                  <section className='container-sobremim'>
+                  <section className='container-sobremim-oculto'>
                   <h1>Sobre mim</h1>
                     <div className="content-p-sobremim-oculto">
                       <p>Sou um desenvolvedor front-end apaixonado pela arte de criar interfaces digitais cativantes e funcionais. Com minhas habilidades técnicas refinadas e meu olho aguçado para o design, me destaco ao transformar conceitos em experiências interativas e intuitivas.</p>
@@ -130,8 +135,8 @@ function App() {
                       <p>No geral, sou um desenvolvedor front-end apaixonado e dedicado, cuja busca pela excelência técnica e bem-estar pessoal se entrelaçam, resultando em um profissional talentoso e equilibrado.</p> 
                     </div>
                   <button 
-                  
-                  className='ler-mais-oculto'>Ler mais</button>
+                  onClick={lerMais}
+                  className='ler-mais-oculto'>Ler menos</button>
                    </section>
                 )}
 
