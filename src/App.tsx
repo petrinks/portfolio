@@ -177,7 +177,7 @@ function App() {
               </section>
             </div>
 
-            {/* <div className="container-projetos">
+            <div className="container-projetos">
               <h1>Projetos</h1>
               <div className="grid-projeto">
                 <div className="grid-projeto-esquerda">
@@ -197,7 +197,7 @@ function App() {
                   <img src="" alt="" />
                 </div>
               </div>
-            </div> */}
+            </div>
 
         </main>
   </div>
