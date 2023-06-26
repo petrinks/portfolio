@@ -19,10 +19,20 @@ function App() {
   const [menuAtivo,setMenuAtivo] = useState(true)
   const [iconAtivo,setIconAtivo] = useState(false)
   const [lerAtivo, setLerAtivo ] = useState(true)
+  const [lerMaisProject, setlerMaisProject ] = useState(true)
+  const [mostrarMaisProjetos, setMostrarMaisProjetos] = useState(true)
  
   function trocarMenuAtivo() {
     setMenuAtivo(!menuAtivo)
     setIconAtivo(!iconAtivo)
+  }
+
+  function lerMaisProjeto() {
+    setlerMaisProject(!lerMaisProject)
+  }
+
+  function mostrarMaisProjetosFunc() {
+    setMostrarMaisProjetos(!mostrarMaisProjetos)
   }
 
   function lerMais() {
@@ -176,29 +186,91 @@ function App() {
                 </div>
               </section>
             </div>
-
             <div className="container-projetos">
               <h1>Projetos</h1>
-              <div className="grid-projeto">
-                <div className="grid-projeto-esquerda">
-                  <h1>Projeto 1</h1>
-                    <div className="box-p">
-                      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in c1.10.32.</p>
-                    </div>
-                    <p><a href="">Repositório do Projeto</a></p>
-                    <div className="container-tecnologias">
-                      <AiFillHtml5 />
-                      <FaCss3Alt />
-                      <FaReact />
-                      <SiSass />
-                    </div>
+              {mostrarMaisProjetos ? (
+                <div className="grid-projeto">
+                <button className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Mais</button>
+                  <div className="grid-projeto-esquerda">
+                    <h1>Projeto 1</h1>
+                      <div className="box-p">
+                        {lerMaisProject ? (
+                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                        )
+                        : (
+                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                        )}
+                      </div>
+                      <p><a href="">Repositório do Projeto</a></p>
+                      <div className="container-tecnologias">
+                        <AiFillHtml5 />
+                        <FaCss3Alt />
+                        <FaReact />
+                        <SiSass />
+                      </div>
+                  </div>
+                  <div className="grid-projeto-direita">
+                    <img src="" alt="" />
+                  </div>  
                 </div>
-                <div className="grid-projeto-direita">
-                  <img src="" alt="" />
+              ) : (
+                <>
+                <div className="grid-projeto">
+                  <div className="grid-projeto-esquerda">
+                    <h1>Projeto 1</h1>
+                      <div className="box-p">
+                        {lerMaisProject ? (
+                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                        )
+                        : (
+                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                        )}
+                      </div>
+                      <p><a href="">Repositório do Projeto</a></p>
+                      <div className="container-tecnologias">
+                        <AiFillHtml5 />
+                        <FaCss3Alt />
+                        <FaReact />
+                        <SiSass />
+                      </div>
+                  </div>
+                  <div className="grid-projeto-direita">
+                    <img src="" alt="" />
+                  </div>  
                 </div>
-              </div>
+                <div className="grid-projeto">
+                <button  className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Menos</button>
+                  <div className="grid-projeto-esquerda">
+                    <h1>Projeto 1</h1>
+                      <div className="box-p">
+                        {lerMaisProject ? (
+                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                        )
+                        : (
+                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                        )}
+                      </div>
+                      <p><a href="">Repositório do Projeto</a></p>
+                      <div className="container-tecnologias">
+                        <AiFillHtml5 />
+                        <FaCss3Alt />
+                        <FaReact />
+                        <SiSass />
+                      </div>
+                  </div>
+                  <div className="grid-projeto-direita">
+                    <img src="" alt="" />
+                  </div>  
+                </div>
+                </>
+              )}
             </div>
-
         </main>
   </div>
   )

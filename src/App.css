@@ -902,8 +902,65 @@ header div h1{
 	color: #9D9D9D;
 }
 
+.button-oculto{
+	display: none;
+}
+
 @media (max-width: 1240px) { 
 	.container-projetos{
 		margin-top: 90px;
+		width: 90%;
+		height: auto;
+		position: absolute;
+		left: 5%;
+		align-items: center;
+		gap: 0px;
+		padding: 20px;
+	}
+	.grid-projeto{
+		flex-direction: column-reverse;	
+		gap: 25px;
+	}
+	.grid-projeto-direita{
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 1 / 1;
+		margin-top: 20px;
+	}	
+	.grid-projeto-esquerda{
+		width: 100%;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	.container-tecnologias{
+		margin-top: 10px;
+	}
+	.container-tecnologias svg{
+		width: 40px;
+		height: 40px;
+	}
+	.grid-projeto-esquerda a{
+		color: #D96941;
+		font-weight: 500;
+	}
+	.grid-projeto-esquerda p{
+		margin-top: 10px;
+	}
+	.grid-projeto-esquerda h1{
+		margin: 0px;
+	}
+	.grid-projeto button{
+		width: 100%;
+        padding: 5px;
+        background-color: #3B3C41;
+        border: solid #D96941 3px;
+        border-radius: 10px;
+        color: #F2F2F2;
+        font-size: 17px;
+        font-weight: 300;
+	}
+	.grid-projeto button:hover{
+		background-color: #D96941;
+		transition: 0.5s ease-in-out;
 	}
 }
