@@ -963,4 +963,7 @@ header div h1{
 		background-color: #D96941;
 		transition: 0.5s ease-in-out;
 	}
+	.button-oculto{
+		display: block;
+	}
 }
