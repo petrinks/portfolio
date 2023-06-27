@@ -4,6 +4,7 @@ import Instagram from "./components/Instagram";
 import WhatsApp from "./components/WhatsApp"
 import Linkedin from "./components/Linkedin";
 import profilePhoto from "./assets/profile-pic.png";
+import project1 from "./assets/project1.png";
 import { IoIosMenu } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
 import { IoLogoJavascript } from "react-icons/io";
@@ -13,6 +14,9 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { SiSass } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
+import { FaPlane } from "react-icons/fa";
+import { BsFillLightbulbFill } from "react-icons/bs";
+import { FaVirus } from "react-icons/fa";
 import { useState } from "react";
 
 function App() {
@@ -164,9 +168,11 @@ function App() {
                 </div>
               </section>
             </div>
-            <div className="container-projetos">
-              <h1>Projetos</h1>
+            <div className="container-projeto-main">
+            
               {mostrarMaisProjetos ? (
+                <div className="container-projetos">
+                <h1>Projetos</h1>
                 <div className="grid-projeto">
                 <button className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Mais</button>
                   <div className="grid-projeto-esquerda">
@@ -190,11 +196,14 @@ function App() {
                       </div>
                   </div>
                   <div className="grid-projeto-direita">
-                    <img src="" alt="" />
-                  </div>  
+                    <img src={project1} />
+                  </div>   
+                </div>
                 </div>
               ) : (
-                <>
+              
+                <div className="container-projetos-long">
+              <h1>Projetos</h1>
                 <div className="grid-projeto">
                   <div className="grid-projeto-esquerda">
                     <h1>Projeto 1</h1>
@@ -217,8 +226,8 @@ function App() {
                       </div>
                   </div>
                   <div className="grid-projeto-direita">
-                    <img src="" alt="" />
-                  </div>  
+                    <img src={project1} />
+                  </div>   
                 </div>
                 <div className="grid-projeto">
                 <button  className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Menos</button>
@@ -243,12 +252,32 @@ function App() {
                       </div>
                   </div>
                   <div className="grid-projeto-direita">
-                    <img src="" alt="" />
+                    <img src={project1} />
                   </div>  
                 </div>
-                </>
+                </div>
+             
               )}
-            </div>
+
+            
+          </div>
+              {/* <div className="container-categorias">
+                <div className="box">
+                    <FaPlane />
+                    <h1>Fluência em linguas Estrangeiras</h1>
+                    <p>Já estou cursando inglês a 1 ano. Penso em futuramente fazer um intercâmbio para para aprimorar meu vocabulário.</p>
+                </div>
+                <div className="box">
+                    <BsFillLightbulbFill />
+                    <h1>Aprendizado Contínuo</h1>
+                    <p>Gosto de estar sempre atualizado e aprender novas tecnologias e habilidades. Por isso, sempre procuro novas maneiras de expandir meu conhecimento </p>
+                </div>
+                <div className="box">
+                    <FaVirus />
+                    <h1>Linux, Kali Linux, Python</h1>
+                    <p>Tenho conhecimento sobre Pentest, SQL Injection, técnicas avançadas de Denial of Service e outros tipos de ataques.</p>
+                </div>
+              </div> */}
         </main>
   </div>
   )
