@@ -18,7 +18,6 @@ import { useState } from "react";
 function App() {
   const [menuAtivo,setMenuAtivo] = useState(true)
   const [iconAtivo,setIconAtivo] = useState(false)
-  const [lerAtivo, setLerAtivo ] = useState(true)
   const [lerMaisProject, setlerMaisProject ] = useState(true)
   const [mostrarMaisProjetos, setMostrarMaisProjetos] = useState(true)
  
@@ -35,10 +34,6 @@ function App() {
     setMostrarMaisProjetos(!mostrarMaisProjetos)
   }
 
-  function lerMais() {
-    setLerAtivo(!lerAtivo)
-  }
-  
   return (
   <div className='body-div'>
       
@@ -122,7 +117,7 @@ function App() {
             </section>  */}
 
             <div className="container-sobremim-tempo">
-                {lerAtivo ? (
+               
                   <section className='container-sobremim'>
                   <h1>Sobre mim</h1>
                     <div className="content-p-sobremim">
@@ -131,25 +126,7 @@ function App() {
                       <p>Minha dedicação em me manter em forma reflete-se na minha abordagem disciplinada e perseverante para solucionar desafios de programação. Assim como em meus treinos, supero obstáculos, busco constantemente aprender e me aprimorar, mantendo-me atualizado sobre as últimas tendências e tecnologias do mundo front-end.</p>
                       <p>No geral, sou um desenvolvedor front-end apaixonado e dedicado, cuja busca pela excelência técnica e bem-estar pessoal se entrelaçam, resultando em um profissional talentoso e equilibrado.</p> 
                     </div>
-                  <button 
-                  onClick={lerMais}
-                  className='ler-mais-ativo ler-mais-inativo'>Ler mais</button>
                  </section>
-                ) : (
-                  <section className='container-sobremim-oculto'>
-                  <h1>Sobre mim</h1>
-                    <div className="content-p-sobremim-oculto">
-                      <p>Sou um desenvolvedor front-end apaixonado pela arte de criar interfaces digitais cativantes e funcionais. Com minhas habilidades técnicas refinadas e meu olho aguçado para o design, me destaco ao transformar conceitos em experiências interativas e intuitivas.</p>
-                      <p>Além da minha paixão pela programação, valorizo um estilo de vida saudável e ativo. A academia é uma parte essencial da minha rotina diária, pois sei que cuidar do meu corpo é fundamental para manter a mente afiada. O exercício físico não apenas fortalece meus músculos, mas também nutre meu cérebro com endorfinas e energia positiva, o que, por sua vez, impulsiona minha criatividade e foco no trabalho.</p>
-                      <p>Minha dedicação em me manter em forma reflete-se na minha abordagem disciplinada e perseverante para solucionar desafios de programação. Assim como em meus treinos, supero obstáculos, busco constantemente aprender e me aprimorar, mantendo-me atualizado sobre as últimas tendências e tecnologias do mundo front-end.</p>
-                      <p>No geral, sou um desenvolvedor front-end apaixonado e dedicado, cuja busca pela excelência técnica e bem-estar pessoal se entrelaçam, resultando em um profissional talentoso e equilibrado.</p> 
-                    </div>
-                  <button 
-                  onClick={lerMais}
-                  className='ler-mais-oculto'>Ler menos</button>
-                   </section>
-                )}
-
               <section className='container-tempo'>
                 <div className="container-linha-tempo">
                   <div className="grid-linha">
