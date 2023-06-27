@@ -74,6 +74,8 @@ function App() {
       </div>
     </div>
      <main>
+
+      <div className="primeira-impressao">
           <header>
             <div> 
               <h1>Pedro Castello</h1>
@@ -84,6 +86,7 @@ function App() {
               <p><a href="#">Habilidades</a></p>
               <p><a href="#">Contato</a></p>
             </div>
+
             {/* MENU RETRATIL */}
             {iconAtivo ? (null) : ( 
             <div className="navbar-retratil" >
@@ -111,10 +114,8 @@ function App() {
               <SiSass />
               <CgFigma />
             </div>
-            
-            {/* <section className={lerAtivo ? 'container' : 'container-2'}>
-              <h1>Oi</h1>
-            </section>  */}
+      </div>
+
 
             <div className="container-sobremim-tempo">
                
