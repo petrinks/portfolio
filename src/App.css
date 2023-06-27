@@ -705,6 +705,7 @@ header div h1{
 		width: 90%;
 		min-height: 50%;
 		position: relative;
+		padding: 15px;
 	}
 	.ler-mais-ativo {
 		display: block;
@@ -817,9 +818,10 @@ header div h1{
 		background-color: transparent;
 	}
 	.content-p-sobremim p{
-		  margin-right: 10px;
+		  margin-right: 3%;
+		  margin-left: 3%;
 	  }
-	  
+
 }
 
 
