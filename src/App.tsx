@@ -17,13 +17,32 @@ import { CgFigma } from "react-icons/cg";
 import { FaPlane } from "react-icons/fa";
 import { BsFillLightbulbFill } from "react-icons/bs";
 import { FaVirus } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [menuAtivo,setMenuAtivo] = useState(true)
   const [iconAtivo,setIconAtivo] = useState(false)
   const [lerMaisProject, setlerMaisProject ] = useState(true)
   const [mostrarMaisProjetos, setMostrarMaisProjetos] = useState(true)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect (() => {
+    const handleScroll = () =>{
+    const scrollTop = window.scrollY;
+    if (scrollTop > 0) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  };
+    window.addEventListener("scroll", handleScroll);
+
+    return() => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); 
+
+
  
   function trocarMenuAtivo() {
     setMenuAtivo(!menuAtivo)
@@ -80,7 +99,8 @@ function App() {
      <main>
 
       <div className="primeira-impressao">
-          <header>
+        <div className="fake-header"></div>
+          <header className={scrolled ? "scrolled" : ''}>
             <div> 
               <h1>Pedro Castello</h1>
             </div>
