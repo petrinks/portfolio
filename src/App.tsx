@@ -96,6 +96,8 @@ function App() {
         <div className="shape triangle blue"></div>
       </div>
     </div>
+
+
      <main>
 
       <div className="primeira-impressao">
@@ -190,9 +192,9 @@ function App() {
             </div>
             
               {mostrarMaisProjetos ? (
-            <div className="container-projeto-main">
+             <div className="container-projeto-main">
                 <div className="container-projetos">
-                <h1>Projetos</h1>
+                  <h1>Projetos</h1>
                 <div className="grid-projeto">
                 <button className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Mais</button>
                   <div className="grid-projeto-esquerda">
@@ -281,6 +283,8 @@ function App() {
              </div>
              )}
 
+
+            <div className="alinhamento-cat">
             
               <div className="container-categorias">
                 <div className="container-box">
@@ -302,7 +306,24 @@ function App() {
                 </div>
               </div>
 
+              <div className="container-contato">
+                <div className="box-contato">
+                  <h1>Contato</h1>
+                  <p>Atualmente estou em busca de uma oportunidade como Desenvolvedor Júnior.</p>
+                  <p>Estou disponível para contato através das redes sociais.</p>
+                  <div className="container-social-midia">
+                    <WhatsApp />
+                    <Linkedin />
+                    <Instagram />
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+          
         </main>
+        {/* <footer><p>Esse site foi feito com ❤️</p></footer> */}
   </div>
   )
 }

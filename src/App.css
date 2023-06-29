@@ -15,6 +15,9 @@ body{
 
 .body-div{
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: start;
 	width: 100%;
 	height: 100%;
 }
@@ -296,7 +299,7 @@ main{
     left: 15%;
     position: absolute;
     width: 70%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 header{
@@ -420,6 +423,8 @@ header div h1{
 	main{
 		width: 98%;
 		left: 1%;
+		min-height: 100%;
+		max-height: 140%;
 	}
 	.navbar{
 		display: none;
@@ -735,7 +740,7 @@ header div h1{
 
 .container-projeto-main{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -833,6 +838,9 @@ header div h1{
 }
 
 @media (max-width: 1240px) { 
+	.container-projeto-main{
+		height: 100%;
+	}
 	.container-projetos{
 		margin-top: 90px;
 		width: 90%;
@@ -897,9 +905,13 @@ header div h1{
 
 /* CATEGORIAS */
 
+
+
+
 .container-categorias{
 	width: 100%;
-	height: 60%;
+	height: 50vh;
+	z-index: -10;
 }
 
 .container-box{
@@ -948,8 +960,6 @@ header div h1{
 	.container-categorias{
 		width: 90%;
 		height: 100%;
-		position: absolute;
-		left: 5%;
 	}
 	.container-box{
 		flex-direction: column;
@@ -961,4 +971,76 @@ header div h1{
 	.box{
 		width: 100%;
 	}
+	.alinhamento-cat{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 90px;
+		margin-top: 90px;
+	}
+}
+
+/* CONTATO */
+
+.container-contato{
+	width: 100%;
+	height: 25%;
+	background-color: #3B3C41;
+	padding: 75px;
+	border-radius: 10px;
+}
+
+.box-contato{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.box-contato p{
+	font-weight: 500;
+}
+
+.container-social-midia{
+	display: flex;
+}
+
+@media (max-width: 1240px){
+	.container-contato{
+		width: 90%;
+		padding: 20px;
+	}
+	.box-contato{
+		align-items: center;
+		text-align: center;
+	}
+	.box-contato p{
+		font-size: 21px;
+	}
+	.box-contato h1{
+		font-size: 35px;
+	}
+	.box-contato svg{
+		width: 50px;
+		height: 50px;
+	}
+	.container-social-midia{
+		gap: 10px	;
+	}
+}
+
+/* FOOTER  */
+
+footer{
+	width: 99vw;
+	height: 140px;
+	background-color: #3B3C41;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+
 }
