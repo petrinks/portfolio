@@ -188,9 +188,9 @@ function App() {
                 </div>
               </section>
             </div>
-            <div className="container-projeto-main">
             
               {mostrarMaisProjetos ? (
+            <div className="container-projeto-main">
                 <div className="container-projetos">
                 <h1>Projetos</h1>
                 <div className="grid-projeto">
@@ -220,8 +220,9 @@ function App() {
                   </div>   
                 </div>
                 </div>
+                </div>
               ) : (
-              
+                <div className="container-projeto-main">
                 <div className="container-projetos-long">
               <h1>Projetos</h1>
                 <div className="grid-projeto">
@@ -277,27 +278,30 @@ function App() {
                 </div>
                 </div>
              
-              )}
+             </div>
+             )}
 
             
-          </div>
-              {/* <div className="container-categorias">
-                <div className="box">
-                    <FaPlane />
-                    <h1>Fluência em linguas Estrangeiras</h1>
-                    <p>Já estou cursando inglês a 1 ano. Penso em futuramente fazer um intercâmbio para para aprimorar meu vocabulário.</p>
+              <div className="container-categorias">
+                <div className="container-box">
+                  <div className="box">
+                      <FaPlane />
+                      <h1>Fluência em linguas Estrangeiras</h1>
+                      <p>Já estou cursando inglês a 1 ano. Penso em futuramente fazer um intercâmbio para para aprimorar meu vocabulário.</p>
+                  </div>
+                  <div className="box">
+                      <BsFillLightbulbFill />
+                      <h1>Aprendizado Contínuo</h1>
+                      <p>Gosto de estar sempre atualizado e aprender novas tecnologias e habilidades. Por isso, sempre procuro novas maneiras de expandir meu conhecimento </p>
+                  </div>
+                  <div className="box">
+                      <FaVirus />
+                      <h1>Linux, Kali Linux, Python</h1>
+                      <p>Tenho conhecimento sobre Pentest, SQL Injection, técnicas avançadas de Denial of Service e outros tipos de ataques.</p>
+                  </div>
                 </div>
-                <div className="box">
-                    <BsFillLightbulbFill />
-                    <h1>Aprendizado Contínuo</h1>
-                    <p>Gosto de estar sempre atualizado e aprender novas tecnologias e habilidades. Por isso, sempre procuro novas maneiras de expandir meu conhecimento </p>
-                </div>
-                <div className="box">
-                    <FaVirus />
-                    <h1>Linux, Kali Linux, Python</h1>
-                    <p>Tenho conhecimento sobre Pentest, SQL Injection, técnicas avançadas de Denial of Service e outros tipos de ataques.</p>
-                </div>
-              </div> */}
+              </div>
+
         </main>
   </div>
   )

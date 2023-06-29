@@ -735,22 +735,23 @@ header div h1{
 
 .container-projeto-main{
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 }
 
 .container-projetos-long{
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: auto;
 	background-color: #3B3C41;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	gap: 105px;
-	padding: 55px 70px 0 70px;
+	align-items: center;
+	gap: 0px;
+	padding: 20px;
+	margin-top: 90px;
 }
 
 .container-projetos{
@@ -899,10 +900,15 @@ header div h1{
 .container-categorias{
 	width: 100%;
 	height: 60%;
+}
+
+.container-box{
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	gap: 100px;
 }
 
@@ -940,10 +946,19 @@ header div h1{
 
 @media (max-width: 1240px){
 	.container-categorias{
+		width: 90%;
+		height: 100%;
+		position: absolute;
+		left: 5%;
+	}
+	.container-box{
 		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 100%;
+		width: 100%;
 	}
 	.box{
-		width: 90%;
-		height: auto;
+		width: 100%;
 	}
 }
