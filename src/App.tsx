@@ -221,6 +221,32 @@ function App() {
                     <img src={project1} />
                   </div>   
                 </div>
+                <div className="grid-projeto oculto">
+                <button className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Mais</button>
+                  <div className="grid-projeto-esquerda">
+                    <h1>Projeto 1</h1>
+                      <div className="box-p">
+                        {lerMaisProject ? (
+                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                        )
+                        : (
+                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
+                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                        )}
+                      </div>
+                      <p><a href="">Repositório do Projeto</a></p>
+                      <div className="container-tecnologias">
+                        <AiFillHtml5 />
+                        <FaCss3Alt />
+                        <FaReact />
+                        <SiSass />
+                      </div>
+                  </div>
+                  <div className="grid-projeto-direita">
+                    <img src={project1} />
+                  </div>   
+                </div>
                 </div>
                 </div>
               ) : (
