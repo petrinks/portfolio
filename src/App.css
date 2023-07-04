@@ -142,8 +142,8 @@ header div h1{
 }
 
 .mobile-menu-navbar p{
-	font-size: 50px;
-	font-weight: bold;
+	font-size: 26px;
+	font-weight: 400;
 }
 
 .header-mobile-menu{
@@ -157,8 +157,9 @@ header div h1{
 
 .header-mobile-menu svg{
 	color: #BFBFBF;
-	width: 40px;
-	height: 40px;
+	width: 28px;
+	height: 28px;
+	margin-right: 18px;
 }
 
 
@@ -175,10 +176,14 @@ header div h1{
 		display: none;
 	}
 	.navbar-retratil{
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		z-index: 2;
 	}
 	.mobile-menu{
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(15px);
 		display: flex;
 		justify-content: end;
 	}
