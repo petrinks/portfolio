@@ -163,6 +163,9 @@ header div h1{
 
 
 @media (max-width: 1240px) {
+	.scrolled{
+		background-color: #737373d8;
+	}
 	main{
 		width: 98%;
 		left: 1%;
