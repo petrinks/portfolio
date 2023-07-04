@@ -164,7 +164,8 @@ header div h1{
 
 @media (max-width: 1240px) {
 	.scrolled{
-		background-color: #737373d8;
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(15px)
 	}
 	main{
 		width: 98%;
