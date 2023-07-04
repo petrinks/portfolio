@@ -3,9 +3,10 @@ import { VscGithub } from 'react-icons/vsc';
 
 
 function Github() {
+    
     return(
         <>
-            <VscGithub className="github" />
+            <a href='https://github.com/petrinks' target="_blank"  ><VscGithub  className="github" /></a>
         </>
     )
 }
