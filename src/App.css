@@ -419,16 +419,23 @@ header div h1{
 	}
 	.container-linha-tempo{
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
+		justify-content: end;
 		height: 100%;
+		width: 18%;
 	}
 	.grid-linha{
+		min-height: 27%;
 		border-bottom: 3px #D96941 solid;
 		border-top: 0;
 	}
 	.circle-tempo{
 		position: relative;
-		top: 72px;
+		top: 115px;
+	}
+	.container-acontecimento-tempo{
+		position: relative;
+		top: 43px;
 	}
 	.grid-acontecimento{
 		min-width: 41%;
