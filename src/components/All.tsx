@@ -19,12 +19,15 @@ import { BsFillLightbulbFill } from "react-icons/bs";
 import { FaVirus } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import {Link} from 'react-scroll';
+import { SiStyledcomponents } from "react-icons/si";
+
 
 
 function All() {
     const [menuAtivo,setMenuAtivo] = useState(true)
     const [iconAtivo,setIconAtivo] = useState(false)
     const [lerMaisProject, setlerMaisProject ] = useState(true)
+    const [lerMaisProject2, setlerMaisProject2 ] = useState(true)
     const [mostrarMaisProjetos, setMostrarMaisProjetos] = useState(true)
     const [scrolled, setScrolled] = useState(false)
   
@@ -51,10 +54,15 @@ function All() {
       setIconAtivo(!iconAtivo)
     }
   
-    function lerMaisProjeto() {
+    function lerMaisProjeto1() {
       setlerMaisProject(!lerMaisProject)
     }
-  
+
+    function lerMaisProjeto2() {
+      setlerMaisProject2(!lerMaisProject2)
+    }
+
+
     function mostrarMaisProjetosFunc() {
       setMostrarMaisProjetos(!mostrarMaisProjetos)
     }
@@ -162,8 +170,9 @@ function All() {
                     <h1>Ainda existe muito a ser codificado</h1>
                   </div>
                   <div className="grid-acontecimento puc">
-                    <h1>Graduação em Ciências da computação</h1>
-                    <p>Em Breve</p>
+                    <h1>Ciências da computação</h1>
+                    <p>PUCRS</p>
+                    <p>2024 ≈ 2027</p>
                   </div>
                   <div className="grid-acontecimento alura">
                     <h1>Mergulhe em Tecnologia!</h1>
@@ -186,20 +195,20 @@ function All() {
                 <div className="grid-projeto">
                 <button className='button-oculto' onClick={mostrarMaisProjetosFunc}>Mostrar Mais</button>
                   <div className="grid-projeto-esquerda">
-                    <h1>Projeto 1</h1>
+                    <h1>D-Bex</h1>
                       <div className="box-p">
                         {lerMaisProject ? (
-                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                           <p> Para o site de turismo, usei CSS, ReactJS, Styled Components, React Hooks e FormSubmit. A combinação dessas tecnologias permitiu um site responsivo e dinâmico, com interface reativa e estilizada. A API FormSubmit facilitou a coleta de dados.. <a className='saber-mais' 
+                          onClick={lerMaisProjeto1}>Ler mais</a></p>
                         )
                         : (
-                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                          <p> Para o site de turismo, usei CSS, ReactJS, Styled Components, React Hooks e FormSubmit. A combinação dessas tecnologias permitiu um site responsivo e dinâmico, com interface reativa e estilizada. A API FormSubmit facilitou a coleta de dados dos usuários, melhorando a interação. A responsividade foi alcançada com media queries, garantindo adaptação a diferentes tamanhos de tela, proporcionando uma navegação suave em todos os dispositivos. <a className='saber-mais' 
+                          onClick={lerMaisProjeto1}>Ler Menos</a></p>
                         )}
                       </div>
                       <p><a href="">Repositório do Projeto</a></p>
                       <div className="container-tecnologias">
-                        <AiFillHtml5 />
+                        <SiStyledcomponents />
                         <FaCss3Alt />
                         <FaReact />
                         <SiSass />
@@ -214,13 +223,13 @@ function All() {
                   <div className="grid-projeto-esquerda">
                     <h1>Projeto 1</h1>
                       <div className="box-p">
-                        {lerMaisProject ? (
+                        {lerMaisProject2 ? (
                            <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                          onClick={lerMaisProjeto2}>Ler mais</a></p>
                         )
                         : (
                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                          onClick={lerMaisProjeto2}>Ler Menos</a></p>
                         )}
                       </div>
                       <p><a href="">Repositório do Projeto</a></p>
@@ -243,20 +252,20 @@ function All() {
               <h1>Projetos</h1>
                 <div className="grid-projeto">
                   <div className="grid-projeto-esquerda">
-                    <h1>Projeto 1</h1>
+                    <h1>D-Bex</h1>
                       <div className="box-p">
                         {lerMaisProject ? (
-                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                           <p> Para o site de turismo, usei CSS, ReactJS, Styled Components, React Hooks e FormSubmit. A combinação dessas tecnologias permitiu um site responsivo e dinâmico, com interface reativa e estilizada. A API FormSubmit facilitou a coleta de dados.. <a className='saber-mais' 
+                          onClick={lerMaisProjeto1}>Ler mais</a></p>
                         )
                         : (
-                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                          <p> Para o site de turismo, usei CSS, ReactJS, Styled Components, React Hooks e FormSubmit. A combinação dessas tecnologias permitiu um site responsivo e dinâmico, com interface reativa e estilizada. A API FormSubmit facilitou a coleta de dados dos usuários, melhorando a interação. A responsividade foi alcançada com media queries, garantindo adaptação a diferentes tamanhos de tela, proporcionando uma navegação suave em todos os dispositivos. <a className='saber-mais' 
+                          onClick={lerMaisProjeto1}>Ler Menos</a></p>
                         )}
                       </div>
                       <p><a href="">Repositório do Projeto</a></p>
                       <div className="container-tecnologias">
-                        <AiFillHtml5 />
+                        <SiStyledcomponents />
                         <FaCss3Alt />
                         <FaReact />
                         <SiSass />
@@ -271,13 +280,13 @@ function All() {
                   <div className="grid-projeto-esquerda">
                     <h1>Projeto 1</h1>
                       <div className="box-p">
-                        {lerMaisProject ? (
-                           <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate .. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler mais</a></p>
+                        {lerMaisProject2 ? (
+                           <p> sandjksada <a className='saber-mais' 
+                          onClick={lerMaisProjeto2}>Ler mais</a></p>
                         )
                         : (
-                          <p> at Hampden-Sydney College in Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sequi deleniti ducimus porro voluptatibus ipsum sunt ut cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, ducimus. <a className='saber-mais' 
-                          onClick={lerMaisProjeto}>Ler Menos</a></p>
+                          <p> snadbshadgashdashjad <a className='saber-mais' 
+                          onClick={lerMaisProjeto2}>Ler Menos</a></p>
                         )}
                       </div>
                       <p><a href="">Repositório do Projeto</a></p>
